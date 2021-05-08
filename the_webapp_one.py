@@ -54,7 +54,7 @@ available_time_in_mins = int(available_time) * 60
 
 starting_node_index= places_name.index(starting_node)
 
-df=pd.read_csv(("time.csv"),skiprows=1,skipfooter=1 )
+df=pd.read_csv(("time.csv"),skiprows=1,skipfooter=1, engine = 'python' )
 travel_time = df.iloc[:,1:].to_numpy()
 
 
@@ -62,7 +62,7 @@ df1=pd.read_csv("survey.csv")
 visit_time=df1.iloc[:,1:].to_numpy()
 
 
-df2=pd.read_csv(("distance.csv"),skiprows=1,skipfooter=2 )
+df2=pd.read_csv(("distance.csv"),skiprows=1,skipfooter=2, engine = 'python' )
 distance = df2.iloc[:,1:].to_numpy()
 
 st.write("BASED ON YOUR PREFERENCES THE BEST ROUTES ARE :")
