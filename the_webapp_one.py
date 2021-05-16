@@ -218,7 +218,7 @@ def normalize(X):
   normalized_number_of_spots_list = np.array(normalized_df['Spots Visited'])
   return np.array(normalized_df)
 
-num_generations = 500
+num_generations = 10
 fitness_list = []
 def compareFloatNum(a, b):
   temp_list = []
